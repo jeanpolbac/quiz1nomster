@@ -1,1 +1,31 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500|Francois+One');
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 0;
+    color: #482169;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    color: #426921;
+}
+
+
+.top-container {
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.description {
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
