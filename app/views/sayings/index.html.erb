@@ -1,0 +1,11 @@
+<h1>hello from sayings/index</h1>
+
+<div>
+  <h1>Enter Your Saying Here</h1>
+  <%= simple_form_for @saying do |f| %>
+    <%= f.input :saying %>
+    <%= f.input :author %>
+  <br />
+    <%= f.submit 'Create', class: 'btn btn-outline-secondary' %>
+  <% end %>
+</div>
