@@ -3,4 +3,8 @@ class SayingsController < ApplicationController
     @sayings = Saying.all
   end
 
+  def new
+    @saying = Saying.new
+  end 
+
 end

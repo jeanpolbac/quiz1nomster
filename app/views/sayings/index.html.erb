@@ -1,7 +1,8 @@
 <h1>hello from sayings/index</h1>
 
-<h1>Enter Your Saying Here</h1>
-  <%= simple_form_for @sayings do |f| %>
+<div>
+<h3>Enter Your Saying Here</h3>
+  <%= simple_form_for @saying do |f| %>
     <%= f.input :saying %>
     <%= f.input :author %>
     <%= f.button :submit %>
