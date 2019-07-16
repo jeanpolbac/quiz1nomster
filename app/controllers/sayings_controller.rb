@@ -8,7 +8,7 @@ class SayingsController < ApplicationController
   end 
 
   def create
-    @saying = sayings.create(saying_params)
+    @saying = Saying.create(saying_params)
     if @saying.valid?
       redirect_to root_path
     end
@@ -17,7 +17,7 @@ class SayingsController < ApplicationController
 private
 
   def saying_params
-    params.require(:saying).permit(:text, :author)
+    params.require(:saying).permit(:saying, :author)
   end
 
 end

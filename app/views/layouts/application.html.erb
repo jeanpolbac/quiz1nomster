@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quiz 1 - Nomster</title>
+    <title>Quiz 2</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,18 +12,29 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <%= link_to 'Quiz 2', root_path, class: 'navbar-brand' %>
 
-    <body>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+          <li class="nav-item active">
+            <%= link_to 'Add a Saying', new_saying_path, class: 'nav-link' %>
+          </li>
+        </ul>
+      </div>
+    </nav>
 		<div class='top-container'>
-			<h1>Web App: Nomster</h1>
-			<h2>Quiz 1</h2>
+			<h1>Web App</h1>
+			<h2>Quiz 2</h2>
 
 			<hr class="dark"/>
 
 			<P class="description">
-				This quiz follows the guidelines set in the instructions. It is a rails application with a page that has static content on it. The web application is hosted on Heroku and the code
-				is being hosted on GitHub. A headline has also been included with non-black color.
-			</P>
+				This quiz follows the guidelines set in the instructions. It is a rails application with a page that has static content on it. The web application is hosted on Heroku and the code is being hosted on GitHub. A headline has also been included with non-black color. Contains a model, and a functional simple form.	
+      </P>
     <%= yield %>
   </body>
 </html>

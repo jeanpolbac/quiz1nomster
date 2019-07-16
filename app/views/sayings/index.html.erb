@@ -1,10 +1,12 @@
-<h1>hello from sayings/index</h1>
+<h1>List of all sayings</h1>
+<hr />
 
 <div>
-  <h1>Enter Your Saying Here</h1>
-  <%= simple_form_for @saying do |f| %>
-    <%= f.input :text %>
-    <%= f.input :author %>
-    <%= f.button :submit %>
+  <% @sayings.each do |saying| %>
+  
+    <h4><%= saying.saying %></h4><br />
+    <i><%= saying.author %></i><br />
   <% end %>
-</div>
+
+  <hr />
+  
